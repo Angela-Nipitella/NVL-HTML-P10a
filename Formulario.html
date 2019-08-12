@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Queremos saber qué opinas de este producto</h1>
+    </header>
+    <img src="imagenes/clinique.jpg" alt="Agua-gel hidratante anti-polucion clinique" width="200" height="300">
+    <figcaption> <strong>Clinique - Dramatically Different Aqua-Gel Hidratante Anti-Polución </strong></figcaption>
+    <br>
+    <br>
+    <form method="post" action="Miservidor.php">
+    <div>
+        <label for="Código postal"> Código postal:</label>
+        <input id="Código postal"type="number">
+    </div>
+    <br>
+    <div>
+        <label for="Nivel de satisfaccion">Nivel de satisfacción del producto:</label>
+        <select id="Nivel de satisfacción">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="Email">E-mail:</label>
+        <input id="Email" type="text">
+    </div>
+    <br>
+    <div>
+        <label for="Puntos positivos"> Puntos positivos:</label>
+        <textarea id="puntos positivos" cols="15" rows="2"></textarea>
+    </div>
+    <div>
+            <label for="Puntos negativos"> Puntos negativos:</label>
+            <textarea id="puntos negativos" cols="15" rows="2"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="Piel">Piel más hidratada</label>
+        <select id="piel">
+            <option value="EX">Excelente</option>
+            <option value="BU">Bueno</option>
+            <option value="RE">Regular</option>
+            <option value="PE">Pésimo</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="Limpieza">Rostro mas limpio</label>
+        <input name="limpieza" type="radio" value="Excelente">Excelente
+        <input name="limpieza" type="radio" value="Bueno">Bueno
+        <input name="limpieza" type="radio" value="Regular">Regular
+        <input name="limpieza" type="radio" value="Pésimo">Pésimo
+    </div>
+    <br>
+    <input type="submit" value="Enviar">
+</form>  
+</body>
+</html>
